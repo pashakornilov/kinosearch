@@ -14,16 +14,14 @@ import { LinearGradient } from "expo-linear-gradient";
 
 export default function App() {
   const { width } = Dimensions.get("window");
-  const ITEM_WIDTH = width / 2.4;
   const handlePress = () => {
     console.log("Кнопка нажата!");
-    // Здесь вы можете добавить нужную логику
   };
 
   return (
     <SafeAreaView style={styles.safeArea}>
       <StatusBar style="light" backgroundColor="black" />
-      <View style={styles.stickyHeader}>{/* Ваш "sticky" контент */}</View>
+      <View style={styles.stickyHeader}></View>
       <ScrollView style={styles.container}>
         <View>
           <View style={{ position: "relative" }}>
@@ -71,8 +69,8 @@ const styles = StyleSheet.create({
     top: 0,
     left: 0,
     right: 0,
-    height: 50, // или любая другая высота
-    backgroundColor: "black", // изменено на черный
+    height: 50,
+    backgroundColor: "black",
     zIndex: 1,
   },
   button: {
